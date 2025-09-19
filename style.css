@@ -51,19 +51,20 @@ body {
 }
 
 .message {
-  background: #fce700;
-  bottom: 50px;
-  font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 800;
-  height: 60px;
-  line-height: 1;
-  padding: 10px;
-  position: absolute;
-  opacity: 0; /* El elemento empieza invisible */
-  animation: fadeIn 1s forwards;
-  animation-delay: 2s; /* El elemento aparecerá después de 60 segundos */
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  background: rgba(255, 255, 0, 0.85);
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.2rem 0;
+  z-index: 1000;
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.13);
+  font-family: 'Comic Sans MS', 'Arial Rounded MT Bold', Arial, sans-serif;
+  letter-spacing: 1px;
+  border-top: 2px solid #ffe066;
 }
 
 @keyframes fadeIn {
